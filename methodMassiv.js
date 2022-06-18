@@ -2,9 +2,9 @@ let arr = ["Игорь", "Филин", 28];
 arr.splice(3, 0, "Скоро будет программистом");
 console.log(arr);
 //
-let arrs = ["Игорь", "Филин", 28];
+let arr = ["Игорь", "Филин", 28];
 let newArr = arr.slice(2, 3);
-console.log(newarr);
+console.log(newArr);
 //
 let arr = ["Игорь", "Филин", 28];
 let arr2 = ["Разработчик", "Начинающий", "Джуниор"];

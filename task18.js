@@ -1,7 +1,5 @@
 const myArray = [];
-let i = 5;
-while (i >= 0) {
+for (let i = 1; i <= 9; i += 2) {
   myArray.push(i);
-  i--;
 }
 console.log(myArray);
