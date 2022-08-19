@@ -1,10 +1,7 @@
 
 function counter () {
-
-    return () => {
-        let count = 0
-        console.log(++count)
-    }
+    let count = 0
+    return () => console.log(++count)
 }
 
 let countFn = counter()
