@@ -1,10 +1,22 @@
-let promise = new Promise((resolve,reject)=> {
- setTimeout(() => reject(new Error('Igor')),1000)
-}).then((data)=>{
-    console.log(data)
-}).catch((err)=>{
-    console.log(err)
+
+let testPromise = new Promise((resolve,reject)=>{
+    setTimeout(() => reject('testPromise'), 2000)
 })
+console.log(testPromise)
+testPromise.catch((err)=> err)
+
+console.log(testPromise)
 
 
-setTimeout(() =>console.log(promise),4000)
+
+
+
+// const rejectInSecond = new Promise(function (resolve, reject) {
+//     setTimeout(function () {
+//         reject(new Error('время истекло'))
+//     }, 1000)
+// })
+// rejectInSecond.catch((err)=> err)
+
+
+
